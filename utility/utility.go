@@ -28,4 +28,9 @@ func FetchFileNameFromUrl(url string)string{
 	return s[len(s)-1]
 }
 
+func FindExtensionOfFile(file string)string{
+	s := strings.Split(file,".")
+	return s[len(s)-1]
+}
+
 
