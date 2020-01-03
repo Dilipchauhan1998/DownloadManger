@@ -8,8 +8,6 @@ func InitializeRoutes() {
 	{
 		downloadRoutes.POST("/", DownloadHandler)
 
-		downloadRoutes.GET("/:download_id", StatusChecker)
+		downloadRoutes.GET("/:downloadId", StatusChecker)
 	}
-	router.GET("/files", ListDownloads)
-	router.GET("/Users/dilipchauhan/Documents/downloaded_files/:download_id/:file_name",ListFile)
 }
